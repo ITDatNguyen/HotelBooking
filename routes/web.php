@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/detail_booking', function () {
+    return view('Hotel.detailHotel');
+});
