@@ -3,7 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DTDL | hotel-bookings</title>
+    <title >DTDL | hotel-Booking</title>
+    <link rel="icon" href="../img/img/logo.png" />
     <link rel="stylesheet" type="text/css" href="../css/room-bookings.css" />
     <!-- bootstrap: de y' 2 file ajax phai dat truoc maxcdn thi moi dung` duoc modal (Form)-->
     <!-- Online -->
@@ -21,6 +22,15 @@
     <!-- End WOWSlider.com HEAD section -->
 
     <style>
+    header{
+        position: fixed;
+        z-index: 200;
+        background: white
+    }
+    #right-aboutHotel, .ws_images
+    {
+        margin-top: 62px
+    }
     </style>
 
     <script>
@@ -59,10 +69,13 @@
 
 </head>
 
+    
+
 <body>
 <div id="container">
+    <div id="dat" style="display:block">
     @include('header-footer.part-header')
-
+    </div>
     <div id="aboutHotel" class="container" style="background-color: rgb(246,245,245); margin: 0; padding: 0">
         <div id="left-aboutHotel" style="width: 65%; float: left; position: relative; background-color: white">
         <div class="tmp-left-aboutHotel" style="display: none">...</div>
