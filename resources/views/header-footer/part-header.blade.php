@@ -78,7 +78,7 @@
                 <!--<span style="color: white">Mạng đặt phòng khách sạn Online</span>-->
 
                 <a href="../Pages/homepage.html" target="_self" title="Về trang chủ">
-                    <img src="../img/img/logo.png" width="110px"/>
+                    <img src="../img/img/logo.png" width="110px" height="64px"/>
                 </a>
                 <span>Mạng đặt phòng khách sạn Online</span>
 
