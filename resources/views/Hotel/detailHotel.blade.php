@@ -18,6 +18,7 @@
 
     <!-- Start WOWSlider.com HEAD section -->
     <link rel="stylesheet" type="text/css" href="../Utilities/slideshow/slideshow2/engine1/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script type="text/javascript" src="../Utilities/slideshow/slideshow2/engine1/jquery.js"></script>
     <!-- End WOWSlider.com HEAD section -->
 
@@ -75,6 +76,7 @@
 <div id="container">
     <div id="dat" style="display:block">
     @include('header-footer.part-header')
+    
     </div>
     <div id="aboutHotel" class="container" style="background-color: rgb(246,245,245); margin: 0; padding: 0">
         <div id="left-aboutHotel" style="width: 65%; float: left; position: relative; background-color: white">
@@ -363,7 +365,7 @@
                     <span class="name-of-location">Đà Nẵng</span>
                 </a>
                 <span class="glyphicon glyphicon-menu-right" style="font-size: 10px"></span>
-                <b>YOY <span class="name-of-hotel">Vanda Hotel</span></b>
+                <b>OYO <span class="name-of-hotel">Vanda Hotel</span></b>
             </div>
         </div>
         <!--tam dat. height de ho tro fill color (vi ko xac dinh dc height cua right-aboutHotel)-->
