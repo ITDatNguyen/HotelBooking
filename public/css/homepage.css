@@ -1,0 +1,423 @@
+*{
+    margin: 0px;
+}
+#container{
+    /*ho tro* cac element ben trong deu 100%*/
+    width: 100%;
+    height: auto;
+}
+
+/*** NAVIGATION-BAR ***/
+nav{
+    /*height: 40px; khi tke ban dau, sau do da~ them <div class="container-fluid">*/
+    background-color: rgb(220, 30, 40);
+    line-height: 40px; /*canh deu noi dung theo chieu doc */
+    /*box-shadow: 2px 2px black;*/
+    /*width: 100%;*/
+
+}
+
+#left-nav{
+    float: left;
+    margin-left: 30px;
+    color: white;
+}
+#left-nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*#left-nav ul li: dang tac dong toan` bo li => dung` class
+vo^ tinh` dat. ten 2 css cung` ten van~ chay. duoc.
+*/
+/*.left-nav-city{*/
+    /*float: left;*/
+    /*margin-left: 0px;*/
+/*}*/
+
+ .rotate-up{
+     position: relative;
+     /* add the animation */
+     -webkit-animation: spin-up 0.3s ease;
+     -moz-animation: spin-up 0.3s ease;
+     /* -ms-animation: spin-right 10s linear infinite;  => Unknown Css property animation */
+     -o-animation: spin-up 0.3s ease;
+     animation: spin-up 0.3s ease;
+ }
+@keyframes spin-up {
+    0%{
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+
+    99%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.rotate-down{
+    position: relative;
+    /* add the animation */
+    -webkit-animation: spin-down 0.3s ease;
+    -moz-animation: spin-down 0.3s ease;
+    -o-animation: spin-down 0.3s ease;
+    animation: spin-down 0.3s ease;
+}
+@keyframes spin-down {
+    0%{
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    99%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.left-nav-city{
+    float: left;
+    margin-left: 10px;
+    /* noi' rong. block, resize sao cho bang` the? div con ben duoi' */
+    padding-left: 15px;
+    padding-right: 15px;
+    /*neu set khi hover thi` se thay' bi. day? xuong'*/
+    border-top: thin solid rgb(220, 30, 40);
+    position: relative;
+    display: inline-block;
+}
+
+.left-nav-city:hover{
+    background-color: white;
+    color: black;
+
+    /*-webkit-border-top-left-radius: 4px; *//* border-radius: binh thuong` thi` ko co' top-left cu the */
+    /*-webkit-border-top-right-radius: 4px;*/
+    /*khac 1 ti'*/
+    /*-moz-border-radius-topleft: 4px; *//* border-radius: binh thuong` thi` ko co' top-left cu the */
+    /*-moz-border-radius-topright: 4px;*/
+    /*border-top: thin solid #ff0000;*/
+}
+
+/*#left-nav-A, #left-nav-B, #left-nav-C => gop 3 ID lai => kho' chinh? sua
+viec display: none; chi cai` tung` ID (none, visible)
+*/
+.tmp-left-nav{
+    /*them 1 class cho 3 id (left-nav-A,B,C), vi co' nhieu thuoc tinh giong nhau' (ngoai`: z-index, margin-left)*/
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 200%;
+    height: 370px;
+    /*cai` lai. mau` do the? hien khac' voi' div chinh' */
+    color: black;
+    /*(margin-top: 40px) dung` khi ul li dat ben ngoai` => anh den su* kien jQuery mouseenter */
+    padding-top: 20px;
+    /**/
+    z-index: 1000;
+    /*margin-left: -15px; ban dau => cac id B, C ko chinh xac */
+    /*giong margin-left cua #left-nav*/
+    left: 45px;
+    /*** http://www.hongkiat.com/blog/css3-box-shadows-effects/ ***/
+    /*border: 1px solid #edf0f3;*/
+    border-right: 1px solid #edf0f3;
+    border-bottom: 1px solid #edf0f3;
+    /*border-top: 0;*/
+    /*padding: 10px 0 10px 10px;*/
+    /*overflow: hidden;*/
+    -webkit-box-shadow: 5px 7px 2px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 7px 2px 1px rgba(0,0,0,0.25);
+    box-shadow: 5px 7px 2px 1px rgba(0,0,0,0.25);
+}
+
+#left-nav-A{
+    /*sau khi cai xong js thi mo? lai: display (visible)*/
+    /*z-index: 1000;*/
+    /*left: 30px;*/
+}
+#left-nav-B{
+    /*z-index: 1001;*/
+    /*left: 30px;*/
+}
+#left-nav-C{
+    /*z-index: 1002;*/
+    /*left: 30px;*/
+}
+
+/*#left-nav-A span, #left-nav-B span, #left-nav-C span{*/
+.tmp-left-nav span{
+    /* vi chi co' 1 the span => ko can class */
+    color: rgb(220, 30, 40);
+    font-weight: bold
+}
+/*#left-nav-A ul, #left-nav-B ul, #left-nav-C ul{*/
+.tmp-left-nav ul{
+    margin-left: 10px; /* lech ve ben phai 1 ti' */
+}
+/*#left-nav-A ul li, #left-nav-B ul li, #left-nav-C ul li{*/
+.tmp-left-nav ul li{
+    margin: 0;
+    margin-top: -10px;
+    padding-top: 0;
+}
+.left-nav-A-lastli, .left-nav-B-lastli, .left-nav-C-lastli{
+    /*#left-nav-A ul li:nth-child(4){*: do co' den' 2 nhom' ul co' format khac nhau/ */
+    font-weight: bold;
+    color: rgb(102,105,102);
+}
+
+/*loai bo color: blue do the a tao ra*/
+.left-nav-city{
+    color: #ffffff;
+    cursor: pointer;
+}
+/*#left-nav-A li:hover, #left-nav-B li:hover, #left-nav-C li:hover{*/
+.tmp-left-nav li:hover{
+    color: rgb(214,57,31);
+}
+
+/*** CENTER ***/
+#center{
+    height: 450px;
+}
+#booking{
+    position: absolute;
+    width: 460px;
+    height: 400px;
+    left: 120px;
+}
+#booking_slogan{
+    font-size: 25px;
+    font-weight: bold;
+    height: 75px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Times New Romans ;
+    text-shadow: 0 1px black;
+    margin-top: 15px;
+}
+#search_form{
+    height: 330px;
+    /*background-color: black;*/
+    /*opacity: 0.2;*/
+    border-radius: 5px;
+    border: 1px solid white;
+}
+/*viet day du ten Id cua the div chua' class .borderless khi tach' rieng file doc lap, neu dat chung 1 file thi ok*/
+#search_form .borderless tbody tr td, #search_form .borderless tbody tr th, #search_form .borderless thead tr th {
+    /*http://stackoverflow.com/questions/18075794/bootstrap-table-without-stripe-borders
+    do mac dinh table co' ke khung, neu them css inline thi ko the tac dong. den duoc.
+    */
+    border: none;
+}
+#search_form input, #search_form select{
+    height: 45px;
+    /*width: con` tuy`*/
+}
+/*neu img la` display: none thi dung` jQuery su kien fadeIn tac dong den (neu' lien quan den' toc' do^)
+va phai kem` the? a de? show duoc ban` tay
+neu dung` css thi` ko the kiem tra dc input dang empty hay la ko? */
+#search-locations img{
+    /*visibility: hidden;*/
+    cursor: pointer;
+}
+/*#search-locations:hover img{*/
+    /*visibility: visible;*/
+/*}*/
+
+/*Put icon inside input element in a form: http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form*/
+/*dag thieu' nut' clear cua type = search*/
+input[type='search'] {
+    background: url(../img/homepage/MarkerFilled-1824.png) no-repeat scroll 5px 10px;
+    padding-left:30px;
+    background-color: #ffffff;
+}
+input[type='date'] {
+    background: url(../img/homepage/cal-icon.png) no-repeat scroll 5px 10px;
+    padding-left:35px;
+    background-color: #ffffff;
+}
+
+#loaiphong-khac{
+    width: 65%;
+    margin: auto;
+    /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#booking_form_search{
+    /*width: 100%;*/
+    width: 96%;
+    height: 50px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+button[type="submit"].mybtn-style1{
+    background: rgb(220,30,40);
+    color: white;
+}
+button[type="submit"].mybtn-style1:hover{
+    background: rgb(212,18,28);
+}
+
+/*** our_promise: Chung toi dam bao ***/
+#our_promise{
+    /*height: 230px; => da~ them class cua bootstrap => them padding-bottom*/
+    padding-bottom: 20px;
+    background-color: white;
+}
+#our_promise_title{
+    height: 70px;
+    width: 300px;
+    text-align: center;
+    line-height: 70px;
+    font-family: Arial, Times New Romans ;
+    color: rgb(70,68,68);
+    font-weight: bold;
+}
+#our_promise img{
+    /*ket hop voi text-align: center cua div chua' no': http://stackoverflow.com/questions/7283045/display-centered-row-of-images*/
+    display: inline-block;
+}
+/*** promotion: Khuyen mai hap dan ***/
+#promotion{
+    /*height: 600px; da~ them class cua bootstrap*/
+    padding-bottom: 50px;
+    background-color: rgb(46,45,45);
+}
+#promotion_title{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    line-height: 50px;
+    font-family: Arial, Times New Romans ;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.redline{
+    height: 3px;
+    background-color: rgb(220,30,40);
+    border-radius: 2px;
+}
+#promotion figure{
+    cursor: pointer;
+}
+/*** comment: Nhan xet khach hang ***/
+#comment{
+    /*height: 600px; da~ them class bootstrap */
+    padding-bottom: 40px;
+    background-color: white;
+}
+#comment_title{
+    height: 90px;
+    width: 300px;
+    text-align: center;
+    line-height: 90px;
+    font-family: Arial, Times New Romans ;
+    color: rgb(70,68,85);
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 20px;
+}
+#comment ul li{
+    display: block;
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+}
+.comment_name{
+    font-weight: bold;
+}
+.comment_country{
+    color: rgb(185,176,177);
+}
+
+.effect-shadow{
+    /*https://graphpaperpress.com/tips/creating-image-shadows-using-css3/*/
+    -webkit-box-shadow: 3px 3px 3px #7C7C7C;
+    box-shadow: 3px 3px 3px #7C7C7C;
+}
+/*Start SCROLL TO TOP*/
+#scrolltop{
+    text-align: center;
+    width: 50px;
+    height: 15px;
+    background-color: rgb(46,45,45);
+    /*margin: auto; ko the dung auto, khi nam` doc lap div rieng*/
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: -15px;
+    /*bottom: 0px;*/
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    /*khac 1 ti'*/
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+}
+#scrolltop:hover span{
+    animation-name: mymove; /* ten bat ky, va` se~ lay' ten da~ luu cac page truoc' */
+    animation-duration: 500ms; /* tong thoi gian 1 lan chay */
+    animation-iteration-count: infinite;    /* dung infinite de loop vo han */
+    /* chua the cai` co' dinh khi them delay */
+    /*cursor: pointer;*/
+    /*neu ko co delay thi se~ gap loi cho lan` chay. dau tien*/
+    animation-delay: 500ms;
+    position: relative;  /* mac dinh. la` Absolute (dung' im) */
+    /* huong' chay. (ko co' suggestions)  reverse: chay nguoc lai */
+    /* alternate: vua chay xuoi va nguoc */
+    animation-direction: alternate;
+    /*animation-play-state:running;*/
+}
+/*@keyframes: dieu khien dien~ bien' cua square*/
+@keyframes mymove {
+    0% { color: rgb(46,45,45); opacity:0.1; top: 10px }
+    100% { color: white; opacity:1; top:0 }
+}
+/* nen chi ro cho chay. tren nhieu browser, neu ko khai bao' thi dung voi default browser
+neu chi co' 1 thuoc tinh thi nhap chung voi @keyframes tren */
+@-webkit-keyframes mymove{
+    0% { color: rgb(46,45,45); opacity:0.1; top: 10px }
+    100% { color: white; opacity:1; top:0 }
+}
+@-moz-keyframes mymove {
+    0% { color: rgb(46,45,45); opacity:0.1; top: 10px }
+    100% { color: white; opacity:1; top:0 }
+}
+/*End SCROLL TO TOP*/
+/*Start transition*/
+#scrolltop{
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease;   /* transition-timing-function: ease (default); in: vao dau cham, out: ket thuc cham, linear: toc do nhu* nhau */
+    /**/
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 500ms;
+    -moz-transition-property: all;
+    -moz-transition-duration: 500ms;
+}
+/*Start transform*/
+/*http://webdesign.tutsplus.com/articles/css3-transitions-and-transforms-from-scratch--webdesign-4975*/
+#scrolltop:hover{
+     transform: scale(1.5);
+     -webkit-transform: scale(1.5);
+     -o-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+ }
+/*End transform*/

@@ -17,4 +17,15 @@ Route::get('/', function () {
 
 Route::get('/search', function () {
     return view('pages.search_hotel');
+Route::get('/detail_booking', function () {
+    return view('Hotel.detailHotel');
+});
+Route::get('/page_home', function () {
+    return view('Home');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('test',function(){
+	return view('admin.master');
 });
