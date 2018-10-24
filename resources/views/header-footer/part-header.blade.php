@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Font Awesome Web Application Icons-->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <style>
         header{
             /*height: 65px;*/
@@ -78,9 +78,10 @@
                 <!--<span style="color: white">Mạng đặt phòng khách sạn Online</span>-->
 
                 <a href="../Pages/homepage.html" target="_self" title="Về trang chủ">
-                    <img src="../img/img/logo.png" width="110px"/>
+                    
+                    <img class="animated bounce" src="../img/img/logo.png" width="110px" height="64px"/> <span>Mạng đặt phòng khách sạn Online</span>
                 </a>
-                <span>Mạng đặt phòng khách sạn Online</span>
+                
 
             </div>
 
