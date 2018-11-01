@@ -1,81 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <!--http://www.w3schools.com/icons/fontawesome_icons_brand.asp-->
-    <!--download file nay` ve` de? chay. offline-->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <style>
-        /*** footer ***/
-        footer{
-            /*height: 370px; ko de? co dinh & dung class cua bootstrap*/
-            background-color: rgb(46,45,45);
-            /*group: background-image: http://www.css3.info/preview/multiple-backgrounds/ */
-            background-image: url('../img/img/footer.png'), url('../img/img/footer.png');
-            background-size: 50% 100px;
-            background-position: left bottom, right bottom;
-            background-repeat: no-repeat;
-            /*khi ben tren co' 2 the div dung` float (+ height = auto) thi phai cai them thuoc tinh' clear de ko bi. troi len tren*/
-            clear: both;
-            padding-bottom: 150px;
-        }
-        #left-footer{
-            float: left;
-            /*width: 40%;*/
-            margin-left: 80px;
-            margin-top: 30px;
-            color: #969595;
-        }
-        #left-footer a:nth-child(1):hover{
-            /*the a dau tien la` logo YOY*/
-            text-decoration: none;
-        }
-        /*http://blog.antonakoglou.com/change-font-awesome-icon-content-hover/*/
-        /*set all*/
-        #icon-socialnetwork a:hover .fa:before{
-            color: rgb(197,196,196);
-        }
-        #icon-socialnetwork .fa{
-            /*cursor: pointer;*/
-            transition-property: all;
-            transition-duration: 200ms;
-            transition-timing-function: ease;   /* transition-timing-function: ease (default); in: vao dau cham, out: ket thuc cham, linear: toc do nhu* nhau */
-            /**/
-            -webkit-transition-property: all;
-            -webkit-transition-duration: 200ms;
-            -moz-transition-property: all;
-            -moz-transition-duration: 200ms;
-        }
-        #icon-socialnetwork a:hover .fa{
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            -o-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-        }
-
-        #right-footer{
-            /*float: left;*/
-            float: right;
-            /*width: 50%;*/
-            margin-top: 15px;
-        }
-        #right-footer a{
-            color: #969595;
-        }
-        #right-footer a:hover{
-
-        }
-        .myTitle{
-            font-size: 18px;
-            font-weight: bold;
-            color: rgb(197,197,197);
-
-        }
-    </style>
-</head>
-<body>
     <footer>
     <div class="container-fluid">
         <div id="left-footer">
@@ -168,6 +91,3 @@
         <!-- http://www.w3schools.com/html/html_symbols.asp -->
         &copy; 2015-16 Batch124.Sem1.Group6 | Thực hiện
     </p>
-
-</body>
-</html>
