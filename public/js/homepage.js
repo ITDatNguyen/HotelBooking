@@ -239,30 +239,24 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    // Add smooth scrolling to all links
-    // https://css-tricks.com/examples/SmoothPageScroll/
-    // http://www.w3schools.com/jquery/css_scrolltop.asp
-//              $("a").on('click', function(event) {
-//            dung the a khi co' nhieu the a cai lien quan den Scroll + ko co hieu u*ng
+    $(".login").on('click', function(){
+        $("#signin").modal();
+    });
+
+    $(".signup").on('click', function(){
+        $("#signin").modal("hide");
+        $("#signup").modal();
+        // $(".modal-backdrop").html($("#signup").html());
+    });
+    
     $("#scrolltop").on('click', function(event) {
-        // Prevent default anchor click behavior
-//                    $(this).css('cursor','none');
-
+       
         event.preventDefault();
-//                    hide cursor do bi. tac dong den img co' hieu u*ng' effect bubba: http://www.w3schools.com/cssref/pr_class_cursor.asp
         $('body').css('cursor', 'none');
-        // Store hash
-//                var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
-//                    scrollTop: $(hash).offset().top
             scrollTop: 0
         }, 900, function(){
             $('body').css('cursor', 'default');
-            // Add hash (#) to URL when done scrolling (default click behavior)
-//                    window.location.hash = hash;
         });
     });
 });
