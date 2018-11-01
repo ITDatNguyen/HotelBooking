@@ -24,9 +24,9 @@ Route::get('/detail_booking', function () {
 Route::get('/page_home', function () {
     return view('Home');
 });
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 Route::get('test',function(){
 	return view('admin.master');
 });
