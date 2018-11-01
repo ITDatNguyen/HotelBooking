@@ -14,12 +14,14 @@
 Route::get('/', function () {
     return view('Home');
 });
-
+Route::get('/create', function () {
+    return view('hotels.createHotel');
+    });
 Route::get('/search', function () {
     return view('pages.search_hotel');
     });
 Route::get('/detail_booking', function () {
-    return view('Hotel.detailHotel');
+    return view('hotels.detailHotel');
 });
 Route::get('/page_home', function () {
     return view('Home');

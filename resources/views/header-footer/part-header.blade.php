@@ -1,4 +1,4 @@
-
+@include('header-footer.header')
     <!-- dung` cho cac trang con` lai
     search-hotels.html & book-now -->
     <header>

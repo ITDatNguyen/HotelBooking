@@ -1,4 +1,4 @@
-
+@include('header-footer.header')
     <footer>
     <div class="container-fluid">
         <div id="left-footer">
@@ -71,6 +71,8 @@
                 <!--<div class="col-xs-5 col-sm-5 col-md-5">-->
                 <div style="float: left; width: 200px; margin: 25px">
                     <p class="myTitle">Dịch vụ cung cấp</p>
+                    <a href="{{ url('create') }}">Đăng ký khách sạn</a>
+                    <br>
                     <a href="#url">Ứng dụng di động - tìm kiếm mọi lúc, mọi nơi YOY Hotel Manager - dành cho chủ khách</a>
                 </div>
                 <!--<div class="col-xs-4 col-sm-4 col-md-4">-->
